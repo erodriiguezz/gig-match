@@ -1,4 +1,83 @@
-<!DOCTYPE html>
+<!-- w3schools icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+{{!-- Optional CSS --}}
+<link rel="stylesheet" href="/css/style.css">
+
+{{!-- jQuery --}}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+{{!-- fontawesome --}}
+<script src="https://kit.fontawesome.com/763a059f45.js" crossorigin="anonymous"></script>
+
+<title>Gig Match</title>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="/">
+    <i style="color: #000;" class="fas fa-seedling"></i> <span id="logo"><b>Gig Match</b></span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li id="navGig" class="nav-item">
+        <a class="nav-link" href="/post">RECRUIT</a>
+      </li>
+      <li id="navGig" class="nav-item">
+        <a class="nav-link" href="/gigs">SEARCH GIGS</a>
+      </li>
+      <li id="navGig" class="nav-item">
+        <a class="nav-link" href="/volunteer">VOLUNTEER</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          ACCOUNT
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/login">LOGIN</a>
+          <a class="dropdown-item" href="/signup">SIGN UP</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+{{!-- loading screen --}}
+<div class="loading">
+  <div class="background"></div>
+  <div class="center">
+    <div class="spinner spinner-border text-success" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+</div>
+
+{{{ body }}}
+
+{{!-- Popper.js  --}}
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+{{!-- Bootstrap JS  --}}
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+{{!-- Optional JS --}}
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+{{!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -46,17 +125,16 @@
     </div>
   </nav>
 
-  {{{ body }}}
+{{{ body }}}
 
-  <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
-    <div class="container text-center">
-      <small>Copyright &copy;2020 Local One Off</small>
-    </div>
-  </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
+<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+  <div class="container text-center">
+    <small>Copyright &copy;2020 Local One Off</small>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
-</html>
+</html> --}}

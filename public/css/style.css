@@ -1,3 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap");
+
+html,
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* navigation */
+.navbar {
+  font-size: 16px;
+  padding: 20px 10%;
+  background-color: #f8f8f8;
+}
+
+.navbar-brand {
+  font-size: 25px;
+}
+
+/* class to vertically and horizontally center divs */
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* class to add anchor a button like style */
+.bttn {
+  font-size: 18px;
+  color: #fff;
+  background-color: #28a745;
+  padding: 12px 30px;
+  max-width: 170px;
+  text-align: center;
+  /* border-radius: 50px; */
+}
+
+.bttn:hover {
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 10px 10px 15px rgba(240, 240, 240, 1);
+}
+
+/* loading screen */
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+
+  display: none;
+}
+
+.loading .background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+/* home page */
+.home {
+}
+
+.home .hero {
+  margin: 100px 10%;
+}
+
+.home .hero .col-lg-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home .hero img {
+  width: 100%;
+  height: 100%;
+  min-width: 300px;
+  min-height: 500px;
+  object-fit: cover;
+}
+
+.home .hero h1 {
+  font-weight: bold;
+}
+
+.home .hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* volunteer page */
+.volunteer {
+  height: 70vh;
+  width: 100vw;
+  background-image: url("https://ucarecdn.com/1fa275cc-b107-4dac-8511-03a4002961aa/larmrmahAEaTUnvneikunsplash1.jpg");
+  background-position: center;
+  background-size: cover;
+
+  font-family: "Source Sans Pro", sans-serif;
+  position: relative;
+}
+
+.volunteer .content {
+  color: #fff;
+  position: absolute;
+  width: 90%;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+}
+
+.volunteer .content h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.volunteer .content .input {
+  width: 90vw;
+  max-width: 400px;
+  background-color: blue;
+  margin: auto;
+  position: relative;
+  font-size: 20px;
+}
+
+.volunteer .content .input input {
+  width: 100%;
+  border: none;
+  padding: 10px 20px;
+  outline: none;
+}
+
+.volunteer .content .input button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/*
 form.signup,
 form.login {
   margin-top: 50px;
@@ -72,7 +223,7 @@ body {
   align-items: center;
 }
 
-/*About CSS*/
+About CSS
 
 .card-group {
   position: absolute;
@@ -80,4 +231,4 @@ body {
   left: 50%;
   margin-bottom: 10px;
   transform: translate(-50%, -50%)
-  }
+  } */

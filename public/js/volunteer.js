@@ -8,13 +8,13 @@ $(document).ready(() => {
   });
 
   // search event when search button is click
-  $(".search-bttn").click(() => {
+  $(".volunteer-search-bttn").click(() => {
     location = $(".location-input").val();
     searchEvents(location);
   });
 
   // search event when enter key is pressed
-  $(".location-input").on("keypress", event => {
+  $(".volunteer-location-input").on("keypress", (event) => {
     location = event.target.value;
 
     if (event.key === "Enter") {
@@ -29,8 +29,8 @@ $(document).ready(() => {
 
       $.ajax({
         url: url,
-        method: "GET"
-      }).then(response => {
+        method: "GET",
+      }).then((response) => {
         $(".loading").hide(); // hide loading screen
 
         let events = JSON.parse(response).events;
@@ -42,10 +42,10 @@ $(document).ready(() => {
 
           console.log(events);
 
-          events.map(event => {
+          events.map((event) => {
             let listItem = `<div class="jumbotron"><h1 class="display-4">${event.title}</h1> <p class="lead">${event.city_name}</p><a class="btn btn-primary btn-lg" href="${event.url}" role="button" target="_blank">Learn more</a></div>`;
 
-            $(".response").append(listItem);
+            $(".volunteer-response").append(listItem);
           });
         }
       });
