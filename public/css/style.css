@@ -19,6 +19,7 @@ p {
   font-size: 16px;
   padding: 20px 10%;
   background-color: #f8f8f8;
+  z-index: 2;
 }
 
 .navbar-brand {
@@ -72,7 +73,7 @@ footer h1 {
   left: 0;
   height: 100vh;
   width: 100vw;
-  z-index: 2;
+  z-index: 3;
 
   display: none;
 }
@@ -98,7 +99,7 @@ footer h1 {
 }
 
 .home .search-cta .header p {
-  width: 70%;
+  width: 60%;
   margin: 10px auto 30px;
 }
 

@@ -9,7 +9,7 @@ $(document).ready(() => {
 
   // search event when search button is click
   $(".volunteer-search-bttn").click(() => {
-    location = $(".location-input").val();
+    location = $(".volunteer-location-input").val();
     searchEvents(location);
   });
 
