@@ -20,12 +20,12 @@ module.exports = function(app) {
     res.render("index");
   });
 
-  app.get("/about", function(req, res) {
-    res.render("about");
+  app.get("/search", function(req, res) {
+    res.render("gigs");
   });
 
-  app.get("/gigs", function(req, res) {
-    res.render("gigs");
+  app.get("/post", isAuthenticated, function(req, res) {
+    res.render("post");
   });
 
   app.get("/apply", function(req, res) {
@@ -38,9 +38,5 @@ module.exports = function(app) {
 
   app.get("/volunteer", function(req, res) {
     res.render("volunteer");
-  });
-
-  app.get("/post", isAuthenticated, function(req, res) {
-    res.render("post");
   });
 };

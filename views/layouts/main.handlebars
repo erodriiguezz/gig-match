@@ -1,6 +1,9 @@
 <!-- w3schools icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
+{{!-- Fontawesome --}}
+<script src="https://kit.fontawesome.com/763a059f45.js" crossorigin="anonymous"></script>
+
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
   integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -11,12 +14,10 @@
 {{!-- jQuery --}}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-{{!-- fontawesome --}}
-<script src="https://kit.fontawesome.com/763a059f45.js" crossorigin="anonymous"></script>
-
 <title>Gig Match</title>
 
-<nav class="navbar navbar-expand-lg navbar-light">
+{{!-- navigation --}}
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
   <a class="navbar-brand" href="/">
     <i style="color: #000;" class="fas fa-seedling"></i> <span id="logo"><b>Gig Match</b></span>
   </a>
@@ -27,10 +28,10 @@
   <div class="collapse navbar-collapse" id="navbarResponsive">
     <ul class="navbar-nav ml-auto">
       <li id="navGig" class="nav-item">
-        <a class="nav-link" href="/post">RECRUIT</a>
+        <a class="nav-link" href="/search">SEARCH GIGS</a>
       </li>
       <li id="navGig" class="nav-item">
-        <a class="nav-link" href="/gigs">SEARCH GIGS</a>
+        <a class="nav-link" href="/post">POST GIGS</a>
       </li>
       <li id="navGig" class="nav-item">
         <a class="nav-link" href="/volunteer">VOLUNTEER</a>
@@ -60,6 +61,11 @@
 </div>
 
 {{{ body }}}
+
+{{!-- footer --}}
+<footer>
+  <h1>&copy; <span id="year"></span> Gig Match. All Rights Reserved.</h1>
+</footer>
 
 {{!-- Popper.js  --}}
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"

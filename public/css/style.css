@@ -1,8 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap");
 
-html,
 body {
   font-family: "Source Sans Pro", sans-serif;
+  padding-top: 87px;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 /* navigation */
@@ -14,6 +23,20 @@ body {
 
 .navbar-brand {
   font-size: 25px;
+}
+
+/* footer */
+footer {
+  /* background-color: #f8f8f8; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h1 {
+  font-size: 18px;
+  padding: 40px 0;
+  font-weight: lighter;
 }
 
 /* class to vertically and horizontally center divs */
@@ -30,15 +53,16 @@ body {
   color: #fff;
   background-color: #28a745;
   padding: 12px 30px;
-  max-width: 170px;
+  max-width: 180px;
   text-align: center;
+  border: 1px solid #28a745;
   /* border-radius: 50px; */
 }
 
 .bttn:hover {
   text-decoration: none;
-  color: #fff;
-  box-shadow: 10px 10px 15px rgba(240, 240, 240, 1);
+  color: #28a745;
+  background-color: #fff;
 }
 
 /* loading screen */
@@ -63,38 +87,83 @@ body {
   opacity: 0.5;
 }
 
-/* home page */
+/* home page starts */
 .home {
 }
 
-.home .hero {
-  margin: 100px 10%;
+/* search-cta section */
+.home .search-cta {
+  text-align: center;
+  padding: 90px 10%;
 }
 
-.home .hero .col-lg-6 {
+.home .search-cta .header p {
+  width: 70%;
+  margin: 10px auto 30px;
+}
+
+.home .search-cta .image img {
+  width: 80%;
+  height: 70%;
+  max-height: 500px;
+  object-fit: cover;
+  margin-top: 60px;
+}
+
+/* post-cta section */
+.home .post-cta {
+  background-image: url("https://ucarecdn.com/580e84ab-2699-40a4-9090-c18d2cc0f597/brucemarsFWVMhUa_wbYunsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  margin: 80px 0;
+
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+.home .post-cta .blur {
+  background-color: #000;
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.home .post-cta .text {
+  top: 55%;
+}
+
+.home .post-cta p {
+  margin-bottom: 30px;
+}
+
+/* volunteer-cta section */
+.home .volunteer-cta {
+  margin: 160px 10% 100px;
+}
+
+.home .volunteer-cta .col-lg-6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.home .hero img {
-  width: 100%;
+.home .volunteer-cta img {
+  width: 90%;
   height: 100%;
   min-width: 300px;
   min-height: 500px;
   object-fit: cover;
 }
 
-.home .hero h1 {
-  font-weight: bold;
+.home .volunteer-cta p {
+  width: 90%;
 }
+/* home page ends */
 
-.home .hero p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-/* volunteer page */
+/* volunteer page starts */
 .volunteer {
   height: 70vh;
   width: 100vw;
@@ -128,7 +197,7 @@ body {
   background-color: blue;
   margin: auto;
   position: relative;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .volunteer .content .input input {
@@ -147,88 +216,4 @@ body {
   border: none;
   outline: none;
 }
-
-/*
-form.signup,
-form.login {
-  margin-top: 50px;
-}
-
-html,
-body {
-  min-height: calc(100vh-50px);
-  margin: 0;
-  background-image: url("../images/background1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-}
-
-#applyContainer {
-  padding-top: 100px;
-}
-
-#gigsContainer {
-  padding-top: 70px;
-  background-color: rgba(224, 241, 214, 0.6) !important;
-  background-color: transparent;
-}
-
-#zipSearch > input {
-  display: inline-flex;
-  font-size: 22px;
-  width: 5em;
-}
-
-#btnZipSearch {
-  border-radius: 5px;
-}
-
-#errorSpot,
-#noResults {
-  font-size: 1.5rem;
-  font-family: Lemon, Arial, Helvetica, sans-serif;
-}
-.card {
-  width: 100%;
-  border-radius: 15px;
-}
-
-#cardImg {
-  margin-top: 15px;
-  min-height: 100%;
-  width: 25%;
-  align-self: center;
-  border-radius: 50%;
-}
-
-#logo {
-  font-family: Lemon, Arial, Helvetica, sans-serif;
-  font-size: 24px;
-}
-
-#sticky-footer {
-  height: 50px;
-  flex-shrink: none;
-  text-align: center;
-  width: 100%;
-  position: fixed;
-  border-top: 2px solid;
-  left: 0;
-  bottom: 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-About CSS
-
-.card-group {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-bottom: 10px;
-  transform: translate(-50%, -50%)
-  } */
+/* volunteer page ends */

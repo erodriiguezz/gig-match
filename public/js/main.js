@@ -1,12 +1,11 @@
 $(document).ready(() => {
-  $(".nav .nav-link").on("click", function() {
-    console.log($(this));
+  // handle active navigation link
+  let page = window.location.pathname.split("/").pop();
+  $(`.nav-link[href="/${page}"]`)
+    .parent()
+    .addClass("active");
 
-    $(".nav-item")
-      .find(".active")
-      .removeClass("active");
-    $(this)
-      .parent()
-      .addClass("active");
-  });
+  // auto update footer copyright year
+  let year = new Date().getFullYear();
+  $("#year").text(year);
 });
