@@ -66,7 +66,7 @@ footer h1 {
   background-color: #fff;
 }
 
-/* loading screen */
+/* loading component */
 .loading {
   position: absolute;
   top: 0;
@@ -88,6 +88,14 @@ footer h1 {
   opacity: 0.5;
 }
 
+/* alert component */
+.alert {
+  position: sticky;
+  top: 150px;
+  right: 150px;
+  z-index: 2;
+}
+
 /* home page starts */
 .home {
 }
@@ -95,7 +103,7 @@ footer h1 {
 /* search-cta section */
 .home .search-cta {
   text-align: center;
-  padding: 90px 10%;
+  padding: 150px 10% 100px;
 }
 
 .home .search-cta .header p {

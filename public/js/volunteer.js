@@ -43,9 +43,9 @@ $(document).ready(() => {
           console.log(events);
 
           events.map((event) => {
-            let listItem = `<div class="jumbotron"><h1 class="display-4">${event.title}</h1> <p class="lead">${event.city_name}</p><a class="btn btn-primary btn-lg" href="${event.url}" role="button" target="_blank">Learn more</a></div>`;
+            let card = `<div class="card" style="width: 18rem;"><div class="card-body"><h5 class="card-title">${event.title}</h5><h6 class="card-subtitle mb-2 text-muted">${event.city_name}</h6><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p><a href="${event.url}" class="card-link">Learn More</a></div></div>`;
 
-            $(".volunteer-response").append(listItem);
+            $(".volunteer-response").append(card);
           });
         }
       });
