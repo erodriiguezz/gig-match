@@ -172,6 +172,20 @@ footer h1 {
 }
 /* home page ends */
 
+/* search page starts here */
+.search {
+  padding: 100px 10%;
+}
+
+.search .results {
+  justify-content: space-around;
+}
+
+.search .results .card {
+  margin: 20px 0;
+}
+/* search page ends here */
+
 /* volunteer page starts */
 .volunteer {
   height: 70vh;
@@ -224,5 +238,17 @@ footer h1 {
   background: none;
   border: none;
   outline: none;
+}
+
+.volunteer-response {
+  padding: 100px 10%;
+}
+
+.volunteer-response {
+  justify-content: space-around;
+}
+
+.volunteer-response .card {
+  margin: 20px 0;
 }
 /* volunteer page ends */

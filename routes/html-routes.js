@@ -24,13 +24,13 @@ module.exports = function(app) {
     res.render("search");
   });
 
-  app.get("/post", function(req, res) {
-    res.render("post");
-  });
-
-  // app.get("/post", isAuthenticated, function(req, res) {
+  // app.get("/post", function(req, res) {
   //   res.render("post");
   // });
+
+  app.get("/post", isAuthenticated, function(req, res) {
+    res.render("post");
+  });
 
   app.get("/apply", function(req, res) {
     res.render("apply");
