@@ -6,43 +6,21 @@ $(document).ready(function() {
     .catch((err) => console.log(err));
 
   function renderResults(gigs) {
-    // gigObjects = []; //empty the array var for modals
     $(".search .results").empty(); // Clear the container if populated.
-    console.log(gigs);
 
     if (gigs.length > 0) {
       gigs.forEach((gig) => {
-        let card = `<div class="card" style="width: 18rem;"><div class="card-body"><h5 class="card-title">${gig.title}</h5><h6 class="card-subtitle mb-2 text-muted">${gig.category}</h6><p class="card-text">${gig.description}</p><a href="" class="card-link">Apply</a></div></div>`;
+        let card = `<div class="card" style="width: 18rem;"><div class="card-body"><h5 class="card-title">${gig.title}</h5><h6 class="card-subtitle mb-2 text-muted">${gig.category}</h6><p class="card-text">${gig.description}</p><button class="card-link apply-bttn">Apply</button></div></div>`;
 
         $(".search .results").append(card);
       });
-
-      //   for (i = 0; i < gigs.length; i++) {
-      //     var typeOfJob;
-      //     // console.log(gigs[i]);
-      //     if (gigs[i].volunteer) {
-      //       typeOfJob = "Volunteer Job";
-      //     } else {
-      //       typeOfJob = `Willing to Pay $${gigs[i].pay}`;
-      //     }
-      //     const avatar = `https://api.adorable.io/avatars/100/${gigs[i].EmployerId}@adorable.io.png`;
-      //     var templateString = `<div class="col-lg-3 col-md-4 col-sm-6 mb-4" data-toggle="modal" data-target="#gigDetail">`;
-      //     templateString += ` <div class="clearfix detailBtn card" data-id="${gigs[i].id}" text-center d-block">`;
-      //     templateString += ` <img id="cardImg" class="card-img-top img-responsive" src="${avatar}" alt="Avatar">`;
-      //     templateString += ` <div class="card-body">`;
-      //     templateString += ` <h4 class="card-header text-center">${gigs[i].title}</h4>`;
-      //     templateString += ` <p class="card-title text-center category">${gigs[i].category}</p>`;
-      //     templateString += ` <p class="card-text text-center category">${typeOfJob}</p></div></div></div>`;
-
-      //     $("#cardContainer").append(templateString);
-      //     gigObjects.push(gigs[i]);
-      //   }
-      // } else {
-      //   var noGigs =
-      //     '<p class="d-flex m-1 p-2" id="noResults">No Gigs Found. Perhaps people need help in another area.</p>';
-
-      //   $("#cardContainer").append(noGigs);
+    } else {
+      ("no gigs yet");
     }
+
+    $(".apply-bttn").click(function() {
+      alert("apllied");
+    });
   }
 
   //   $(".nav-item").removeClass("active");
