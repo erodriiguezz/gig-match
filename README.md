@@ -16,10 +16,10 @@ The purpose is more of a volunteer type of gigs. People can see if it’s a char
 
 ## Collaborators
 
-- Carlos Mazon [CARLOS](https://github.com/reithal/)
-- Anthony Robles [ANTHONY](https://github.com/Arobl034)
-- Keyla Santoyo [KEYLA](https://github.com/Keylasan)
-- Ernesto Rodriguez [ERNESTO](https://github.com/erodrigueztoimil)
+- [Carlos Mazon](https://github.com/reithal/)
+- [Anthony Robles](https://github.com/Arobl034)
+- [Keyla Santoyo](https://github.com/Keylasan)
+- [Ernesto Rodriguez](https://github.com/erodrigueztoimil)
 
 # Deployed Version
 You can find the deployed version [here](https://gig-match.herokuapp.com/)
